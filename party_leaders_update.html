@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Do party leader approval ratings predict election outcomes? Update.</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jack Blumenau</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">
+    <span class="fa fa-book  fa-2x"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="teaching.html">
+    <span class="fa fa-comments  fa-2x"></span>
+     
+    Teaching
+  </a>
+</li>
+<li>
+  <a href="cv.pdf">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    CV
+  </a>
+</li>
+<li>
+  <a href="blogposts.html">
+    <span class="fa fa-pencil  fa-2x"></span>
+     
+    Engagement
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/jblumenau">
+    <span class="fa fa-twitter fa-2x"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Do party leader approval ratings predict election outcomes? Update.</h1>
+<h4 class="date"><em>April 19th, 2017</em></h4>
+
+</div>
+
+
+<p>During the 2015 UK general election I wrote <a href="http://blogs.lse.ac.uk/politicsandpolicy/party-leader-approval-ratings-and-election-outcomes/">a piece</a> for the LSE election blog which looked at whether party leader approval ratings predict election outcomes. This was in the context of a campaign where the Labour leader was seen as impossibly unpopular because, amongst other things, he seemed unable to eat a <a href="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/05/21/11/v3-miliband-selwynv2.jpg">bacon sandwich</a>. The <a href="https://en.wikipedia.org/wiki/TL;DR">tl;dr</a> version of that piece was: There is a relatively weak relationship between leader approval ratings and election outcomes. Probably best not to put too much weight on them.</p>
+<p>We now face fresh elections in a few weeks’ time, and, as in 2015, speculation is rife (see <a href="http://www.independent.co.uk/news/uk/politics/theresa-may-called-snap-election-fears-jeremy-corbyn-resign-general-a7690061.html">here</a>, <a href="http://www.newstatesman.com/politics/elections/2017/04/election-2017-what-should-you-do-if-you-support-labour-cant-stand-jeremy">here</a>, and <a href="https://www.theguardian.com/commentisfree/2017/apr/19/general-election-labour-annihilation-jeremy-corbyn">here</a>, for example) that because their leader is impossibly unpopular, Labour face an electoral wipe-out. It therefore seems like a reasonable time to return to this topic. In this post, I am going to assess how well a (very simple) prediction model based on party leader approval ratings performed in 2015, and re-run the analysis for 2017. As in 2015, all the data I present here is taken from <a href="https://www.ipsos-mori.com/researchpublications/researcharchive/2419/Political-Monitor-Archive.aspx">Ipsos MORI’s monthly political barometer</a> surveys</p>
+<p>First off, how have trends in Labour, Conservative, and Liberal Democrat party leader satisfaction changed since 2015? The figure below plots the proportion of Ipsos respondents answering “satisfied” minus the proportion of respondents answering “dissatisfied” for each leader at monthly intervals from 1974 to about one month ago, along with some smoothed trend lines.</p>
+<p><img src="party_leaders_update_files/figure-html/cars-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>There has been a lot of movement in these trends since the last election for all three parties. Notably, Theresa May is considerably more popular now than David Cameron was on the eve of the 2015 election. May is currently also a little more popular than Cameron was at the start of the coalition government, and almost as popular as Major in the early 1990s.</p>
+<p>Tim Farron is also clearly more popular than Nick Clegg was throughout much of the coalition government, though that is a low baseline for comparison. Focussing only on the periods in which the Liberal Democrats were in opposition, Farron’s satisfaction rating is lower now than Lib Dem leaders at almost any other point in recent history.</p>
+<p>Corbyn’s ratings are, by almost any standard of comparison, very poor. His current rating is lower than at any point in Miliband’s tenure, and only marginally better than the lows of Gordon Brown in 2009 and Michael foot before the 1983 election. That said, the difference between Miliband in 2015 and Corbyn in 2017 is not enormous – something that will become relevant in the discussion of the predictions below.</p>
+<p>The panels in the figure below show the simplest possible model for predicting change in national vote share with changes in party leader approval. The x-axis shows the change in average party leader approval from the 100 days before one election to 100 days before the next election. The y-axis shows the change in national vote share from one election to another. Points represents parties in a given election, and vertical lines are the predictions from this model for 2015 (left panel) and 2017 (right panel). There is <em>a lot</em> of uncertainty in the relationship between party leader approval and vote share, and so rather predictions are given as a range of plausible values (90% prediction intervals). The gray dashed line is the best-fitting line between these points.</p>
+<p><img src="party_leaders_update_files/figure-html/pressure-1.png" width="1344" style="display: block; margin: auto;" /></p>
+<p>How did this model do in 2015? Not very well. In a story that is <a href="http://eprints.ncrm.ac.uk/3789/1/Report_final_revised.pdf">by now familiar</a>, this model drastically underestimated the Conservative vote share in 2015. Comparing the point estimate for the Conservatives in 2015 (blue circle) to the real change in vote share from 2010 to 2015 (blue diamond) suggests that this model underestimated Conservative suport by about 5 percentage points. Which is pretty awful. For example, by way of comparison, the forecast by the team at <a href="http://www.electionforecast.co.uk">electionforecast.co.uk</a> underestimated the Conservative vote by just 1.7 percentage points.</p>
+<p>Similarly, the estimates for Labour in 2015 were also garbage. This model suggested that Labour would <em>decrease</em> their share of the vote by about one and a half percentage points, whereas in reality it increased by about a point.</p>
+<p>On the other hand, this model did a reasonable job at predicting support for the Liberal Democrats. The point estimate in the left-hand plot implied that the Lib Dems would lose 12.2 percentage points of their share of the national vote, where the true figure was 15.7. (The electionforecast.co.uk model suggested that the Lib Dems vote share would decrease by 11.3 percentage points.) This is particularly humbling, as in 2015 I wrote the following:</p>
+<blockquote>
+<p>We have never witnessed a Lib Dem leader as unpopular as Nick Clegg. The upshot is that the extrapolation implied by this model almost certainly overestimates the extent of the Lib Dem demise in 2015, regardless of Clegg’s current (woeful) personal ratings.</p>
+</blockquote>
+<p>So, the only case where the model performed reasonably is the case I identified in advance as being dumb. Go figure.</p>
+<p>Despite the generally poor performance of this model, we can nevertheless see what this data suggests for the election on June 8th. The right hand panel of the figure above does this by plotting the 90% prediction intervals for each party based on the average net satisfaction rating of each leader over the past 100 days. There are a few things to note.</p>
+<p>First, although Corbyn’s current ratings are low in absolute terms, they are not <em>that</em> much lower than Miliband’s were during the equivalent period. Because the model here focuses on <em>change</em> in approval ratings, Labour’s vote share is predicted to fall by “only” 2.5 percentage points. This would be a bad result, but Labour lost a larger share of the vote in 1983, 2005 and 2010. One interpretation of this is that voters already priced in the unpopularity of the Labour leader in 2015 (Miliband) and so the unpopularity of the Labour leader in 2017 (Corbyn) is unlikely to lead to (further) large declines in Labour’s vote share.</p>
+<p>Second, the point estimates for both the Conservatives and the Lib Dems suggest substantial gains in terms of national vote share. The model suggests that the Conservatives should see their vote share increase by 4.9 percentage points, and the Lib dems by 4.3 points. Put into context, such a shift would be the largest increase in vote share by the Conservatives since 1979, and since 1983 for the Liberal Democrats.</p>
+<p>More generally, however, I stand by the main conclusion from the piece I wrote in 2015:</p>
+<blockquote>
+<p>The main point is simple: party leaders’ approval ratings fluctuate much more dramatically than parties’ vote shares… Just because a party leader has become drastically unpopular, this does not mean that the party will lose a drastic number of votes at the election.</p>
+</blockquote>
+<p>This is indicated by the wide prediction intervals in the figures above. For example, the estimate of the change in the Labour national vote share ranges from a 9 percentage point decrease to a 4 point increase. Similarly, the intervals for both the Conservatives and the Lib Dems run from roughly an 11 point increase to a 2 point decrease. In short, predictions based purely on leader approval ratings are therefore very uncertain!</p>
+<p>This point is made clearer in the the figures below. In these panels, I plot the same data as before but constrain the x and y axes to have the same scale. When we do this, it is straightfoward to see that party leader approval ratings are simply not terribly predictive of party vote shares. A decline in a leader’s personal net approval rating of 10 points, is associated with a decrease in vote share of only 2.2 percentage points.</p>
+<p><img src="party_leaders_update_files/figure-html/pressure_two-1.png" width="1344" style="display: block; margin: auto;" /></p>
+<p>The tl;dr version of this piece, then, is also familiar: There is a relatively weak relationship between leader approval ratings and election outcomes. Probably best not to put too much weight on them.</p>
+
+<hr>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6248530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

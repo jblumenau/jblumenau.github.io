@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Jack Blumenau</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jack Blumenau</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">
+    <span class="fa fa-book  fa-2x"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="teaching.html">
+    <span class="fa fa-comments  fa-2x"></span>
+     
+    Teaching
+  </a>
+</li>
+<li>
+  <a href="cv.pdf">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    CV
+  </a>
+</li>
+<li>
+  <a href="blogposts.html">
+    <span class="fa fa-pencil  fa-2x"></span>
+     
+    Engagement
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/jblumenau">
+    <span class="fa fa-twitter fa-2x"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Jack Blumenau</h1>
+
+</div>
+
+
+
+<style type="text/css">
+ul.CV {
+list-style-type: none;
+}
+</style>
+
+<ul class="CV">
+<li>
+<i class="fa fa-home" aria-hidden="true"></i> Department of Methodology, London School of Economics, Houghton Street, London, WC2A 2AE
+</li>
+<li>
+<i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:j.blumenau@lse.ac.uk">j.blumenau@lse.ac.uk</a>
+</li>
+<li>
+<i class="fa fa-mobile" aria-hidden="true"></i> (+44) 07742 506 757
+</li>
+<li>
+<i class="fa fa-globe" aria-hidden="true"></i> <a href="www.jackblumenau.com" class="uri">www.jackblumenau.com</a>
+</li>
+<li>
+<i class="fa fa-clock-o" aria-hidden="true"></i> Last Updated: July 17, 2018
+</li>
+</ul>
+<hr />
+<div id="academic-positions" class="section level1">
+<h1>Academic Positions</h1>
+<ul>
+<li>2016 -
+<ul>
+<li>Post-doctoral Research Fellow – Department of Methodology, LSE
+<ul>
+<li>Funding body: ESRC Future Research Leaders Scheme</li>
+</ul></li>
+</ul></li>
+<li>2015 - 16
+<ul>
+<li>LSE Fellow – Department of Government, LSE</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="education" class="section level1">
+<h1>Education</h1>
+<ul>
+<li>2012 - 2016
+<ul>
+<li>PhD in Political Science - London School of Economics and Political Science</li>
+</ul></li>
+<li>2014
+<ul>
+<li>Visiting Scholar – Government Department and IQSS, Harvard University</li>
+</ul></li>
+<li>2010 - 2012
+<ul>
+<li>MPhil in European Politics and Society – University of Oxford</li>
+</ul></li>
+<li>2006 - 2009
+<ul>
+<li>BSc in Government – London School of Economics and Political Science</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="research-papers" class="section level1">
+<h1>Research Papers</h1>
+<div id="published-papers" class="section level2">
+<h2>Published papers</h2>
+</div>
+<div id="section" class="section level2">
+<h2>2017</h2>
+<p>Blumenau, J. and B. E. Lauderdale (2017). “Never Let a Good Crisis Go to Waste: Agenda Setting and Legislative Voting in Response to the EU Crisis”. In: <em>Forthcoming - Journal of Politics</em>. URL: <a href="https://www.dropbox.com/s/yan0hn5tj7jipzo/v9.pdf?dl=0" class="uri">https://www.dropbox.com/s/yan0hn5tj7jipzo/v9.pdf?dl=0</a>.</p>
+</div>
+<div id="section-1" class="section level2">
+<h2>2016</h2>
+<p>Blumenau, J, A. C. Eggers, D. Hangartner and S. Hix (2016). “Open/Closed List and Party Choice: Experimental Evidence from the UK”. In: <em>British Journal of Political Science</em>, pp. 1-19. DOI: <a href="https://doi.org/10.1017/S0007123415000629">10.1017/S0007123415000629</a>. URL: <a href="https://www.cambridge.org/core/article/open-closed-list-and-party-choice-experimental-evidence-from-the-uk/3591892A046B62667F43B3B531762D9C" class="uri">https://www.cambridge.org/core/article/open-closed-list-and-party-choice-experimental-evidence-from-the-uk/3591892A046B62667F43B3B531762D9C</a>.</p>
+</div>
+<div id="papers-under-review" class="section level2">
+<h2>Papers under review</h2>
+</div>
+<div id="section-2" class="section level2">
+<h2>2017</h2>
+<p>Blumenau, J. (2017). “Legislative Role Models: Female Ministers, Participation, and Influence in the UK House of Commons”. In: <em>Under Review</em>. URL: <a href="https://www.dropbox.com/s/pp6ozhbhyewu2t8/ajps_cut.pdf?dl=0" class="uri">https://www.dropbox.com/s/pp6ozhbhyewu2t8/ajps_cut.pdf?dl=0</a>.</p>
+</div>
+<div id="working-papers" class="section level2">
+<h2>Working Papers</h2>
+</div>
+<div id="section-3" class="section level2">
+<h2>2017</h2>
+<p>Blumenau, J. (2017). “Are E-Petitions Pointless? Evidence from the House of Commons”. URL: <a href="https://www.dropbox.com" class="uri">https://www.dropbox.com</a>.</p>
+</div>
+<div id="section-4" class="section level2">
+<h2>2016</h2>
+<p>Blumenau, J. (2016). “Intra-Party Politics, Cohesion, and Legislative Gridlock”. URL: <a href="https://www.dropbox.com/s/gzr9db9f2nniqo2/v9.pdf?dl=0" class="uri">https://www.dropbox.com/s/gzr9db9f2nniqo2/v9.pdf?dl=0</a>.</p>
+<hr />
+</div>
+</div>
+<div id="research-income-grants-and-awards" class="section level1">
+<h1>Research Income, Grants and Awards</h1>
+<p>This following section provides a summary of research income, grants and awards to date which totals £263,476.</p>
+<ul>
+<li>2016
+<ul>
+<li><em>ESRC</em> ESRC Future Research Leaders Scheme (PI) <strong>£184,857 </strong></li>
+</ul></li>
+<li>2014
+<ul>
+<li><em>ESRC</em> Overseas Institutional Visit Scheme (Harvard) (PI) <strong>£3,000 </strong></li>
+</ul></li>
+<li>2012
+<ul>
+<li><em>ECPR</em> Outstanding Paper ECPR Joint Sessions (PI) <strong>£1,000 </strong></li>
+</ul></li>
+<li>2011
+<ul>
+<li><em>ESRC</em> Advanced Quantitative Methods Stipend (PI) <strong>£9,000 </strong></li>
+</ul></li>
+<li>2010
+<ul>
+<li><em>ESRC</em> 1+3 Studentship (PI) <strong>£62,360 </strong></li>
+</ul></li>
+<li>2009
+<ul>
+<li><em>LSE</em> Kelly Black-Iwaskow Prize (PI) <strong>£1,000 </strong></li>
+<li><em>LSE</em> Basset Memorial Prize (PI) <strong>£2,009 </strong></li>
+</ul></li>
+<li>2008
+<ul>
+<li><em>LSE</em> Harold Laski Scholarship (PI) <strong>£250 </strong></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="other-work-experience" class="section level1">
+<h1>Other Work Experience</h1>
+<ul>
+<li>Researcher
+<ul>
+<li>YouGov US Election – 2016</li>
+<li>YouGov EU Referendum – 2016</li>
+<li>British Polling Council - Poling Inquiry – 2015</li>
+</ul></li>
+<li>Editor
+<ul>
+<li>LSE General Election 2015 <a href="blogs.lse.ac.uk/generalelection">blog</a> – 2014-2015</li>
+</ul></li>
+<li>Research assistant
+<ul>
+<li><a href="electionforecast.co.uk" class="uri">electionforecast.co.uk</a> – 2014 - 2015</li>
+<li>Dr Andrew Eggers, London School of Economics – 2012</li>
+<li>Dr Radoslaw Zubek, University of Oxford – 2011</li>
+<li>The Childrens Media Foundation – 2010</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="teaching" class="section level1">
+<h1>Teaching</h1>
+<ul>
+<li>MY452</li>
+<li>GV101</li>
+<li>ME414</li>
+<li>MY459</li>
+</ul>
+<hr />
+</div>
+<div id="methods-training" class="section level1">
+<h1>Methods Training</h1>
+<ul>
+<li>Advanced Quantitative Research Methodology, Harvard – 2014</li>
+<li>Quantitative Research Methods II, MIT – 2014</li>
+<li>Advanced Regression Modelling, LSE – 2013</li>
+<li>Causal Inference for Experimental and Observational Studies, LSE – 2013</li>
+<li>Agent Based Modelling, ECPR Winter School, University of Vienna – 2013</li>
+<li>Applied Statistics for Political Scientists, University of Oxford – 2011</li>
+<li>Intermediate Social Statistics, University of Oxford – 2011</li>
+<li>Multilevel Modelling, University of Oxford – 2011</li>
+<li>Introduction to , University of Oxford – 2011</li>
+</ul>
+<hr />
+</div>
+<div id="computer-languages-and-software" class="section level1">
+<h1>Computer Languages and Software</h1>
+<ul>
+<li>R</li>
+<li>LaTeX</li>
+<li>STATA</li>
+</ul>
+<hr />
+</div>
+<div id="professional-service" class="section level1">
+<h1>Professional Service</h1>
+<ul>
+<li>Reviewer
+<ul>
+<li><em>American Journal of Political Science</em></li>
+<li><em>American Political Science Review</em></li>
+<li><em>Journal of Politics</em></li>
+<li><em>British Journal of Political Science</em></li>
+<li><em>Journal of Legislative Studies</em></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="additional-activities" class="section level1">
+<h1>Additional Activities</h1>
+<ul>
+<li>Co-Convener, Political Science and Political Economy Doctoral Workshop – LSE</li>
+<li>Convener, Current Research in EU Politics Seminar Series – University of Oxford</li>
+<li>Actor, Various. Professional CV <a href="http://www.spotlight.com/2219-7831-0442">here</a>. IMDB page <a href="http://www.imdb.com/name/nm0089773/?ref_=nmbio_bio_nm">here</a>.</li>
+</ul>
+</div>
+
+<hr>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6248530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
