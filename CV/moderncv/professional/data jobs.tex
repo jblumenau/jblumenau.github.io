@@ -1,0 +1,209 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%\usepackage[colorlinks = true]{hyperref}
+\AfterPreamble{\hypersetup{
+ colorlinks = true,
+  urlcolor=blue,
+}}
+\nonstopmode
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jack}{Blumenau}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{29C Marquis Road}{London N4 3AN}%{UK}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(7742)~506~757}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{j.blumenau@lse.ac.uk}                               % optional, remove / comment the line if not wanted
+\homepage{www.jackblumenau.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--present}{PhD, Political Science}{London School of Economics}{}{\textit{expected September 2015}}{}  % arguments 3 to 6 can be left empty
+\cventry{2015}{Institute for Quantitative Social Science}{Harvard University}{}{\textit{Visiting Scholar}}{}
+\cventry{2010--2012}{MPhil, European Politics and Society}{University of Oxford}{}{\textit{Distinction}}{}
+\cventry{2006--2009}{BSc., Political Science}{London School of Economics}{}{\textit{First Class Honours}}{}
+
+\section{Experience}
+\subsection{Data}
+\cventry{2014--2015}{London School of Economics General Election Blog}{Managing Editor}{London}{}{Edited, managed, and contributed to this high-profile academic \href{http://blogs.lse.ac.uk/generalelection}{blog} during the 2015 UK general election campaign. Duties included: writing clear, informative, and statistically literate articles for the site; commissioning and editing content from scholars around the world; promoting the site to the public and to journalists; giving regular presentations to the media; managing a team of sub-editors; managing social-media. %\newline{}%
+%Detailed achievements:%
+\begin{itemize}%
+\item A selection of my own writings for the LSE blog:
+  \begin{itemize}%
+  \item \href{http://blogs.lse.ac.uk/generalelection/party-leader-approval-ratings-and-election-outcomes/}{Do party leader approval ratings predict election outcomes?} Coverage: \href{http://www.theweek.co.uk/election-2015/62572/dave-s-decline-in-popularity-is-a-bigger-issue-than-ed-s}{The Week}
+  \item \href{http://blogs.lse.ac.uk/generalelection/new-electoral-registration-rules-mean-students-are-likely-to-be-under-represented-in-the-2015-election/}{Students are likely to be under-represented in the 2015 election.}
+  \item \href{http://blogs.lse.ac.uk/politicsandpolicy/what-would-the-election-look-like-under-pr/}{What would the election look like under PR?} Coverage: \href{http://www.ft.com/cms/s/0/bc8c482e-fe65-11e4-8efb-00144feabdc0.html}{Financial Times}, \href{http://www.washingtonpost.com/blogs/monkey-cage/wp/2015/05/06/what-would-britain-look-like-under-proportional-representation/}{Washington Post}, \href{http://www.huffingtonpost.co.uk/mark-serwotka/2015-general-election-electoral-reform_b_6620062.html}{Huffington Post}.
+  \end{itemize}
+\item Media coverage of presentations includes: \href{http://www.smh.com.au/world/voters-fear-of-change-may-swing-british-election-20150502-1mvzia.html}{The Sydney Morning Herald}, \href{http://www.hs.fi/ulkomaat/a1430887259188}{Helsingin Sanomat}, \href{http://www.challenges.fr/europe/20150406.CHA4623/royaume-uni-a-un-mois-des-legislatives-le-multipartisme-se-confirme.html}{Challenges}, \href{http://www.ladepeche.fr/article/2015/04/06/2082503-royaume-uni-duel-tres-serre-legislatives-pleines-incertitudes.html}{La Depeche}, \href{http://www.lepoint.fr/monde/grande-bretagne-des-legislatives-qui-tournent-au-jeu-de-massacre-06-04-2015-1918909_24.php}{Le Point}, \href{http://www.sudouest.fr/2015/04/06/elections-en-grande-bretagne-les-incertitudes-majoritaires-a-un-mois-du-duel-cameron-miliband-1883241-6072.php}{Sud Ouest}, \href{http://www.economica.net/alegeri-in-marea-britanie-conservatorii-si-laburistii-la-egalitate-in-sondaje-cu-o-luna-inainte-de-scrutinul-parlamentar_99096.html}{Economica.net}.
+\end{itemize}}
+\\~\\
+\cventry{2014--2015}{Electionforecast.co.uk (also known as the BBC's ``Newsnight Index'')}{Polling Assistant}{London}{}{Worked on the development and presentation of the \url{election forecast.co.uk} forecasting model for the 2015 UK general election. Duties included: contributing to the development of the forecasting model; writing blog posts to explain the forecasts; collecting and inputting daily polling data; preparing daily updates to feature on the \href{http://electionforecast.co.uk}{forecasting website} as well as on BBC's \href{https://www.youtube.com/watch?v=Yfr14vVqze0}{Newsnight} programme.
+\newline{}%
+\emph{Selected writings on behalf of electionforecast.co.uk:}
+  \begin{itemize}%
+  \item \href{http://blogs.lse.ac.uk/generalelection/will-ed-become-pm/}{Will Ed become PM?} Coverage: \href{http://www.independent.co.uk/voices/comment/election-catchup-what-are-the-chances-of-ed-miliband-becoming-prime-minister-10195022.html}{The Independent}
+   \item \href{http://blogs.lse.ac.uk/generalelection/four-electoral-records-that-might-be-broken-in-may/}{Four electoral records that might be broken in May.} Coverage: \href{http://www.theguardian.com/world/2015/jan/23/general-election-2015-key-themes}{The Guardian}; \href{http://www.may2015.com/datablast/four-electoral-records-that-might-be-broken-in-may/}{The New Statesman}
+  \item \href{http://blogs.lse.ac.uk/generalelection/the-not-so-basic-legislative-arithmetic-of-the-2015-election/}{The (not so) basic legislative arithmetic of the 2015 election}
+  \end{itemize}}
+\\~\\
+\cventry{2005}{Angela Smith, MP (now Baroness Smith of Basildon)}{Parliamentary Assistant}{London}{}{Worked in this busy parliamentary office during the period that Lady Smith was the Parliamentary Under Secretary of State for Northern Ireland. Duties included: preparing and managing constituency case work; speechwriting; preparing parliamentary questions; responding to media requests. }
+
+%\cventry{2012}{Dr Andrew Eggers, London School of Economics}{Research Assistant}{London}{}{}
+%\cventry{2011}{Dr Radoslaw Zubek, University of Oxford}{Research Assistant}{Oxford}{}{}
+
+                 
+\subsection{Teaching}
+\cventry{2014--2015}{Class teacher - Applied Regression Analysis}{Department of Methodology, LSE}{}{}{}
+\cventry{2014--2015}{Class teacher - Applied Statistical Computing}{Department of Methodology, LSE}{}{}{}
+\subsection{Acting}
+\cventry{}{Full CV \href{http://www.spotlight.com/2219-7831-0442}{here}, IMDB page \href{http://www.imdb.com/name/nm0089773/?ref_=nmbio_bio_nm}{here}}{Various}{}{}{I have acted professionally for 18 years, playing leading roles in theatre, television and film.}
+
+\section{Awards}
+\cventry{2010 - 2014}{For the outstanding paper presented at the ECPR Joint Sessions of Workshops}{Wildenmann Prize}{}{}\\
+\cventry{2010 - 2014}{Economic and Social Research Council, 3 year award}{Advanced Quantitative Methods Enhanced Stipend}{}{}\\
+\cventry{2009}{Departmental prize for best final year dissertation}{Kelly Black-Iwaskow Prize, LSE}{}{}\\
+\cventry{2009}{Departmental prize for best overall degree results}{Basset Memorial Prize, LSE}{}{}\\
+\cventry{2008}{Departmental prize for best overall results in second year}{Harold Laski Scholarship, LSE}{}{}\\
+
+\section{Computer skills}
+\cvdoubleitem{Statistical computing}{\emph{R}, \emph{STATA}}{Level}{Advanced}
+\cvdoubleitem{Type-setting}{\LaTeX, Word}{Level}{Advanced}
+\cvdoubleitem{Other}{PowerPoint, Excel}{Level}{Advanced}
+
+\section{PhD thesis}
+\cvitem{Title}{\emph{Three Quantitative Essays in Legislative Politics}}
+%\cvitem{supervisors}{Supervisors}
+\cvitem{Description}{This thesis uses advanced quantitative methods to investigate the voting and speechmaking behaviour of legislators in the European Parliament and the UK House of Commons. 
+The first paper, which was awarded the Wildenmann Prize for best paper presented at the ECPR Joint Sessions in 2012, explores how party leaders in the European Parliament restrict access to the plenary agenda so as to preserve party unity on roll call votes. The second paper uses a Bayesian ideal-point model to estimate the effect of the financial crisis on voting coalitions in the European Parliament. The final paper presents a new dataset of half a million parliamentary speeches to explain the participation of female MPs in parliamentary debates.}
+
+\section{Quantitative Training}
+\cventry{2014}{Massachusetts Institute of Technology}{Quantitative Research Methods}{}{}\\
+\cventry{2014}{University of Harvard}{Advanced Quantitative Research Methodology}{}{}\\
+\cventry{2013}{London School of Economics}{Causal Inference for Experimental and Observational Studies}{}{}\\
+\cventry{2013}{London School of Economics}{Advanced Regression Analysis}{}{}\\
+\cventry{2011}{University of Oxford}{Multilevel Modelling}{}{}\\
+\cventry{2011}{University of Oxford}{Intermediate Social Statistics}{}{}\\
+\cventry{2011}{University of Oxford}{Applied Statistics for Political Scientists}{}{}\\
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\section{Publications and working papers}
+\cvitem{Title}{\href{https://www.academia.edu/7934679/Open_Closed_List_and_Party_Choice_Experimental_Evidence_from_the_U.K} {\emph{Open/Closed Lists and Party Choice: Experimental Evidence from the U.K.}}}}
+%\cvitem{Co-authors}{Andrew Eggers, Dominik Hangartner, and Simon Hix}
+\cvitem{}{Forthcoming - British Journal of Political Science}
+\\~\\
+\cvitem{Title}{\href{https://www.dropbox.com/s/o6jz4qnckdk5m87/v7.pdf?dl=0}{\emph{Never Let a Good Crisis Go to Waste: Agenda Setting and Legislative Voting in Response to External Shocks}}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{Co-authors}{Ben Lauderdale}
+\cvitem{}{Under review.}
+\\~\\
+\cvitem{Title}{\href{http://www.academia.edu/2151951/Agenda_Control_and_Party_Cohesion_in_the_European_Parliament} { Agenda Control and Party Cohesion in the European Parliament}}
+\cvitem{}{In progress.}
+
+
+\section{References}
+%\begin{cvcolumns}
+\begin{itemize}
+\item Professor Simon Hix, \href{mailto:s.hix@lse.ac.uk}{s.hix@lse.ac.uk}, 020 7955 7657
+\item Professor Sara Hobolt, \href{mailto:s.b.hobolt@lse.ac.uk}{s.b.hobolt@lse.ac.uk}, 020 7955 7580
+\item Dr. Benjamin Lauderdale, \href{mailto:b.e.lauderdale@lse.ac.uk}{b.e.lauderdale@lse.ac.uk}, 020 7955 6156
+\end{itemize}
+  %\cvcolumn{Political}{\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(All references available upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+%
+%%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
