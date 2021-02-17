@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+let jsondata;
+fetch("https://www.jackblumenau.com/data/conjoint_test.json")
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .then(json => jsondata);
+
+
+</script>
+
+<script>
+	
+function random_item(items)
+{
+
+
+return items[Math.floor(Math.random()*items.length)];
+     
+}
+
+
+var items = [254, 45, 212, 365, 2543];
+console.log(random_item(items));
+
+</script>
+
+<script>
+
+var jsonData = JSON.parse(jsondata)
+
+const values = Object.values(jsonData)
+
+const randomValue = values[parseInt(Math.random() * values.length)]
+
+console.log(randomValue)
+
+
+</script>
+
+</head>
+<body>
+
+<button>Get Data</button>
+
+<div id="container" ></div>
+
+</body>
+</html>
