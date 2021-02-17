@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<script>
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+<script>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+function myFunction() {
+  var item = getRndInteger(1,100);
+  var str1 = "https://www.jackblumenau.com/json_files/";
+  var endstub = ".json"
+  var res = str1.concat(item);
+  var res2 = res.concat(endstub);
+  return res2
+}
+
+
+window.location.replace(myFunction());
+
+</script>
+
+
+
+</body>
+</html>
