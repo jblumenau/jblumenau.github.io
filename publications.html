@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research</title>
+
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jack Blumenau</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">
+    <span class="fa fa-book  fa-2x"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="teaching.html">
+    <span class="fa fa-comments  fa-2x"></span>
+     
+    Teaching
+  </a>
+</li>
+<li>
+  <a href="cv.pdf">
+    <span class="fa fa-file  fa-2x"></span>
+     
+    CV
+  </a>
+</li>
+<li>
+  <a href="blogposts.html">
+    <span class="fa fa-pencil  fa-2x"></span>
+     
+    Engagement
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/jblumenau">
+    <span class="fa fa-twitter fa-2x"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Research</h1>
+
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+  function toggleDiv(divId) {
+   $("#"+divId).toggle();
+}
+</script>
+<style type="text/css">
+
+ .jumbotron {
+    display: none;
+    
+  }
+  
+  .greybox {
+    border-width: thin;
+    border-color: Lightgray;
+    border-style: solid;
+  }
+
+ .bottom-three {
+     padding-bottom: 3cm;
+  }
+  
+</style>
+<p><br /></p>
+<div id="publications" class="section level2">
+<h2>Publications</h2>
+<div class="greybox">
+<p><strong>Risk and Health Policy Preferences: Evidence from the UK
+COVID-19 Crisis</strong>
+<a href="#" onclick="toggleDiv('foo_covid_risk');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="./papers/covid_risk.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Raluca Pahontu and Timothy Hicks</p>
+<p><em>Accepted, British Jounral of Political Science, 2022</em></p>
+<div id="foo_covid_risk" class="jumbotron" visibility="none">
+<p>The onset of the COVID-19 pandemic constituted a large shock to the
+risk of acquiring a disease that represents a meaningful threat to
+health. We investigate whether individuals subject to larger increases
+in objective health risk – operationalised by occupation-based measures
+of proximity to other people – became more supportive of increased
+government healthcare spending during the crisis. Using panel data which
+tracks UK individuals before and after the outbreak of the pandemic, we
+implement a fixed-effect design which was pre-registered before the key
+treatment variable was available to us. While individuals in high-risk
+occupations were more worried about their personal risk of infection,
+and had higher COVID death rates, there is no evidence that increased
+health risks during COVID-19 shifted attitudes on government spending on
+healthcare, nor broader attitudes relating to redistribution. Our
+findings are consistent with recent research demonstrating the limited
+effects of the pandemic on political attitudes.</p>
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>No Longer Conforming to Stereotypes? Gender, Political Style,
+and Parliamentary Debate in the UK</strong>
+<a href="#" onclick="toggleDiv('foo_gender_style');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="./papers/gender_styles.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Lotte Hargrave</p>
+<p><em>British Journal of Political Science, 2021</em></p>
+<div id="foo_gender_style" class="jumbotron" visibility="none">
+<p>Research on political style suggests that where women make arguments
+that are more emotional, empathetic, and positive, men use language that
+is more analytical, aggressive, and complex. However, existing work does
+not consider how gendered patterns of style vary over time. Focusing on
+the UK, we argue that pressures for female politicians to conform to
+stereotypically ‘feminine’ styles have diminished in recent years. To
+test this argument, we describe novel quantitative text analysis
+approaches for measuring a diverse set of styles at scale in political
+speech data. Analysing UK parliamentary debates between 1997 and 2019,
+we show that female MPs’ debating styles have changed substantially over
+time, as women in parliament have increasingly adopted stylistic traits
+that are typically associated with ‘masculine’ stereotypes of
+communication. Our findings imply that prominent gender-based
+stereotypes of politicians’ behaviour are significantly worse
+descriptors of empirical reality now than they were in the past.</p>
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>The Variable Persuasiveness of Political Rhetoric</strong>
+<a href="#" onclick="toggleDiv('foo_persuasion');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="./papers/persuasion.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Benjamin E Lauderdale</p>
+<p><em>American Journal of Political Science, 2021</em></p>
+<div id="foo_persuasion" class="jumbotron" visibility="none">
+Which types of political rhetoric are most persuasive? Politicians make
+arguments that share common rhetorical elements, including metaphor, ad
+hominem attacks, appeals to expertise, moral appeals, and many others.
+However, political arguments are also highly multidimensional, making it
+difficult to assess the relative persuasive power of these elements. We
+report on a novel experimental design which assesses the relative per-
+suasiveness of a large number of arguments that deploy a set of
+rhetorical elements to argue for and against proposals across a range of
+UK political issues. We find modest dif- ferences in the average
+effectiveness of rhetorical elements shared by many arguments, but also
+large variation in the persuasiveness of arguments of the same
+rhetorical type across issues. In addition to revealing that some
+argument-types are more effective than others in shaping public opinion,
+these results have important implications for the interpretation of
+survey-experimental studies in the field of political communication.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Measuring Attitudes towards Public Spending using a
+Multivariate Tax Summary Experiment</strong>
+<a href="#" onclick="toggleDiv('foo8');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="https://doi.org/10.1111/ajps.12643" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Lucy Barnes and Benjamin E Lauderdale</p>
+<p><em>American Journal of Political Science, 2021</em></p>
+<div id="foo8" class="jumbotron" visibility="none">
+It is difficult to measure public views on tradeoffs between spending
+priorities because public understanding of existing government spending
+is limited and the budgetary problem is complicated. We present a new
+measurement strategy using UK taxpayer summaries as the baseline for a
+continuous treatment, multivariate choice experiment. The experiment
+proposes deficit neutral bundles of changes in spending and taxation,
+allowing us to investigate attitudes towards modifications to the
+existing budget. We then use a structural choice model to estimate
+public preferences over 13 spending categories and the taxation level,
+on average and as a function of respondent attributes. We find that the
+UK public favours paying more in tax to finance large spending increases
+across major budget categories; that spending preferences are
+multidimensional; and that younger people prefer lower levels of
+taxation and spending than older people. Finally, we report a
+pre-registered out-of-sample validation of the estimates from the
+experiment.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Online Activism and Dyadic Representation: Evidence from the
+UK E-Petition System</strong>
+<a href="#" onclick="toggleDiv('petition_toggle');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="https://doi.org/10.1111/lsq.12291" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p><em>Legislative Studies Quarterly, 2020</em></p>
+<div id="petition_toggle" class="jumbotron" visibility="none">
+By making it easier for citizens to communicate their preferences,
+online forms of political participation have the potential to strengthen
+the representational link between politicians and voters. However, we
+know little about the effects of online advocacy on politicians’
+behaviour. Using new data from an e-petition system in the UK, I show
+that support for a petition amongst a Member of Parliament’s
+constituents substantially increases the probability that the MP
+advocates for the petition in parliamentary debate, even when compared
+to their behaviour in counterfactual non-petition debates which focus on
+the same policy issues. However, MP responsiveness is conditioned both
+by party discipline and electoral competition. These findings have
+important implications for our understanding of dyadic representation in
+parliamentary systems.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Parliamentary Debate in the UK House of Commons</strong>
+<a href="#" onclick="toggleDiv('book_chapter');"><span class="badge"
+style="float: right;">Abstract</span></a></p>
+<p>with Roberta Damiani</p>
+<p><em>Chapter in The Politics of Legislative Debate (eds. Hanna Bäck,
+Marc Debus, and Jorge M. Fernandes, Forthcoming, 2020)</em></p>
+<div id="book_chapter" class="jumbotron" visibility="none">
+We describe the institutional setting of parliamentary debate in the UK
+House of Commons and assess the determinants of participation in
+Commons’ debates using data on more than two million speeches from 1979
+to 2019. We show that the main determinant of participation in
+parliamentary debate in the UK is whether an MP holds an institutionally
+powerful position in either the government or opposition parties. In
+addition, we describe two patterns in the evolution of debate behaviour
+in the Commons over time. First, although MPs in government and
+opposition leadership positions give more speeches than backbench MPs in
+all periods that we study, the speech-making “bonus” these actors enjoy
+has decreased over time. Second, MPs have increasingly employed
+constituency-oriented language in their parliamentary speeches over the
+past 40 years; a finding we link to theoretical accounts of legislative
+competition in personal-vote-seeking electoral systems.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Model-Based Pre-Election Polling for National and
+Sub-National Outcomes in the US and UK</strong>
+<a href="#" onclick="toggleDiv('foo4');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="https://doi.org/10.1016/j.ijforecast.2019.05.012"><span
+class="badge" style="float: right;">Paper</span></a></p>
+<p>with Benjamin E Lauderdale, Delia Bailey and Douglas Rivers</p>
+<p><em>International Forecasting Journal, 2020</em></p>
+<div id="foo4" class="jumbotron" visibility="none">
+We describe a strategy for applying multilevel regression and
+post-stratication (MRP) methods to pre-election polling. Using a
+combination of contemporaneous polling, census data, past election
+polling, past election results, as well as other sources of information,
+we are able to construct probabilistic, internally consistent estimates
+of national vote and the sub-national electoral districts that determine
+seats or electoral votes in many electoral systems. We report on the
+performance of three applications of the general framework conducted and
+publicly released in advance of the 2016 UK Referendum on EU Membership,
+the 2016 US Presidential Election, and the 2017 UK General Election.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>The Effects of Female Leadership on Women’s Voice in
+Political Debate</strong> <a href="#" onclick="toggleDiv('foo3');">
+<span class="badge" style="float: right;">Abstract</span> </a>
+<a href="https://doi.org/10.1017/S0007123419000334" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p><em>British Journal of Political Science, 2019</em></p>
+<div id="foo3" class="jumbotron" visibility="none">
+Do female leaders amplify the voices of other women in politics? I
+address this question by examining parliamentary debates in the UK House
+of Commons. In the context of a difference-in-differences design which
+makes use of over-time variation in the gender of cabinet ministers, I
+demonstrate that female ministers substantially increase the
+participation of other female MPs in relevant debates, compared to when
+the minister is male. Further, using a measure of debate influence based
+on the degree to which words used by one legislator are adopted by other
+members, I show that female ministers also increase the influence of
+female backbenchers. To explore the mechanisms behind these results, I
+introduce a new metric of ministerial responsiveness and show that
+female ministers are significantly more responsive to the speeches of
+female backbenchers than are male ministers.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Never Let a Good Crisis Go to Waste: Agenda Setting and
+Legislative Voting in Response to the EU Crisis</strong>
+<a href="#" onclick="toggleDiv('foo2');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="http://www.journals.uchicago.edu/doi/pdfplus/10.1086/694543">
+<span class="badge" style="float: right;">Paper</span></a></p>
+<p>with Benjamin E Lauderdale</p>
+<p><em>Journal of Politics, 2017</em></p>
+<div id="foo2" class="jumbotron" visibility="none">
+When exogenous shocks make status quo policies less attractive,
+legislators become more tolerant to proposed alternatives that are
+further from their ideal in general political dimensions. This increases
+the discretion of legislative agenda-setters, and allows them to pass
+policy that would have been impossible in the absence of a crisis. We
+argue that this dynamic explains changes in voting patterns of the
+European Parliament during the period of the financial crisis, given
+control of the agenda-setting process by pro-integration actors. We
+observe voting coalitions increasingly dividing legislators along the
+pro-anti integration dimension of disagreement, but only in policy areas
+related to the crisis. In line with more qualitative assessments of the
+content of passed legislation, the implication is that pro-integration
+actors were able to shift policy further towards integration than they
+could have without the crisis.
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Open/Closed List and Party Choice: Experimental Evidence from
+the UK</strong> <a href="#" onclick="toggleDiv('foo1');"><span
+class="badge" style="float: right;">Abstract</span></a>
+<a href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/openclosed-list-and-party-choice-experimental-evidence-from-the-uk/3591892A046B62667F43B3B531762D9C" ><span
+class="badge" style="float: right;">Paper</span></a></p>
+<p>with Andrew C. Eggers, Dominik Hangartner &amp; Simon Hix</p>
+<p><em>British Journal of Political Science, 2016</em></p>
+<div id="foo1" class="jumbotron" visibility="none">
+Which parties benefit from open-list (as opposed to closed-list)
+proportional representation elections? This article shows that a move
+from closed-list to open-list competition is likely to be more favorable
+to parties with more internal disagreement on salient issues; this is
+because voters who might have voted for a unified party under closed
+lists may be drawn to specific candidates within internally divided
+parties under open lists. The study provides experimental evidence of
+this phenomenon in a hypothetical European Parliament election in the
+UK, in which using an open-list ballot would shift support from UKIP
+(the Eurosceptic party) to Eurosceptic candidates of the Conservative
+Party. The findings suggest that open-list ballots could restrict
+support for parties that primarily mobilize on a single issue.
+</div>
+</div>
+<p>
+</p>
+<p><br /></p>
+</div>
+<div id="under-review" class="section level2">
+<h2>Under Review</h2>
+<div class="greybox">
+<p><strong>Testing Negative: The Non-Consequences of COVID-19 on Mass
+Ideology</strong>
+<a href="#" onclick="toggleDiv('foo_covid_ideology');"><span
+class="badge" style="float: right;">Abstract</span></a>
+<a href="./papers/covid_ideology.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Timothy Hicks, Alan M. Jacobs, J. Scott Matthews, and Tom
+O’Grady</p>
+<p><em>2022</em></p>
+<div id="foo_covid_ideology" class="jumbotron" visibility="none">
+<p>In response to the COVID-19 pandemic governments implemented
+large-scale economic and social policies that, outside of war time, are
+unprecedented in scale and scope. They highlighted the state’s capacity
+to guarantee economic and health security, and they reached beyond
+demographic groups that are more typically beneficiaries of state
+support. Because of this, we hypothesise that exposure to the pandemic
+and these policy responses caused ideological change, including
+attitudes to the role of government in the economy, redistribution, and
+the deservingness of beneficiaries of state support. We test this
+expectation using data from the long-running (2014–present) British
+Election Study Internet Panel, together with a unique panel survey
+fielded to existing BES respondents in April and September, 2020. Our
+panel makes it possible to track individuals on a rich set of variables
+both before and during the pandemic. We find virtually no evidence that
+the pandemic, or exposure to pandemic-induced shocks, affected
+ideological beliefs about the role of government, or economic and social
+policy attitudes. In a follow-up survey experiment on British
+respondents we test one possible reason for this lack of change –- a
+lack of elite cues -– but find that exposure to elite cues linking the
+pandemic to a greater government role in providing welfare, national
+insurance and public spending has no impact on ideological beliefs
+either. We conclude that the pandemic was not, and could not have been,
+a cause of mass ideological change.</p>
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Liberals and Conservatives Rely on Very Similar Sets of
+Foundations When Comparing Moral Violations</strong>
+<a href="#" onclick="toggleDiv('foo_chickens');"><span class="badge"
+style="float: right;">Abstract</span></a>
+<a href="./papers/chickens.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Benjamin E Lauderdale</p>
+<p><em>2022</em></p>
+<div id="foo_chickens" class="jumbotron" visibility="none">
+<p>Moral Foundations Theory (MFT) aims to explain the origins of and
+variation in human moral reasoning. Applications in political science
+have revealed differences in the degree to which liberals and
+conservatives explicitly endorse five core moral foundations of care,
+fairness, authority, loyalty and sanctity. However, differences in
+self-reported assessments of the moral relevance of each foundation do
+not imply that citizens with different political orientations respond to
+concrete scenarios based on different moral intuitions. We introduce a
+new approach for measuring the implicit importance of the 5 moral
+foundations by asking survey respondents from the UK and the US to
+compare pairs of vignettes which describe violations relevant to each
+foundation. We analyse responses to these comparisons using a
+hierarchical Bradley-Terry model which allows us to evaluate the
+relative importance of each foundation to individuals with different
+political perspectives. Our results suggest that, despite prominent
+claims to the contrary, voters on the left and the right of politics
+share broadly similar moral intuitions.</p>
+</div>
+</div>
+<p>
+</p>
+<!--- 
+
+## Working papers
+
+<div class="greybox">**Measuring Agenda-Setting Influence from Legislative Speech** <a href="#" onclick="toggleDiv('foo7');"><span class="badge" style="float: right;">Abstract</span></a> <a href="./papers/influence.pdf" ><span class="badge" style="float: right;">Paper</span></a> 
+
+_Working Paper (2018)_
+
+<div id="foo7" class="jumbotron" visibility = "none">
+Assessing which actors are influential in political debate is important for understanding the mechanisms behind legislative decision-making. Conceiving of 'influence' as a speaker's ability to mould discussion of an issue towards their own framing, I propose a measurement strategy which infers influence by modelling each speech in a debate as a function of the speeches that preceded it. Intuitively, an influential speech is one that is highly predictive of other speeches that occur later in the debate, and influential legislators are those who deliver influential speeches. I apply this method to debates in the UK House of Commons from 1979 to 2018, and compare the measure to potential alternatives in a series of validation tests. I demonstrate the value of this approach by using the measure to address important questions in legislative politics.
+ </div></div>
+
+<p>   </p>
+
+
+<div class="greybox">**Intra-Party Politics, Cohesion, and Legislative Gridlock** <a href="#" onclick="toggleDiv('foo6');"><span class="badge" style="float: right;">Abstract</span></a> <a href="./papers/ep_blocking.pdf" ><span class="badge" style="float: right;">Paper</span></a>
+
+_Working Paper (2016)_
+
+<div id="foo6" class="jumbotron" visibility = "none">Where the preferences of party members are more diffuse, it becomes more difficult for legislative party leaders to discipline their members, making agenda control a more attractive means of maintaining party cohesion on the legislative floor. Thus, when disciplinary resources are limited, increases in intra-party polarisation will increase the range of proposals blocked by party leaders. Using roll-call data and a new dataset of blocked legislative proposals, I show that these relationships hold in the European Parliament, where agenda control and carrot and stick disciplinary powers are held by different sets of parliamentary actors. These findings have implications for our understanding of European Parliament politics specifically, and for the relationship between intra-party dynamics and legislative gridlock more generally.</div></div>
+
+<p>   </p>
+
+
+--->
+</div>
+
+<hr>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6248530-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
