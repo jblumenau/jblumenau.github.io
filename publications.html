@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -269,13 +266,6 @@ $(document).ready(function () {
     CV
   </a>
 </li>
-<li>
-  <a href="blogposts.html">
-    <span class="fa fa-pencil  fa-2x"></span>
-     
-    Engagement
-  </a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -330,10 +320,10 @@ $(document).ready(function () {
 COVID-19 Crisis</strong>
 <a href="#" onclick="toggleDiv('foo_covid_risk');"><span class="badge"
 style="float: right;">Abstract</span></a>
-<a href="./papers/covid_risk.pdf" ><span class="badge"
+<a href="https://doi.org/10.1017/S0007123422000539" ><span class="badge"
 style="float: right;">Paper</span></a></p>
 <p>with Raluca Pahontu and Timothy Hicks</p>
-<p><em>Accepted, British Jounral of Political Science, 2022</em></p>
+<p><em>Accepted, British Jounral of Political Science, 2023</em></p>
 <div id="foo_covid_risk" class="jumbotron" visibility="none">
 <p>The onset of the COVID-19 pandemic constituted a large shock to the
 risk of acquiring a disease that represents a meaningful threat to
@@ -359,10 +349,10 @@ effects of the pandemic on political attitudes.</p>
 and Parliamentary Debate in the UK</strong>
 <a href="#" onclick="toggleDiv('foo_gender_style');"><span class="badge"
 style="float: right;">Abstract</span></a>
-<a href="./papers/gender_styles.pdf" ><span class="badge"
+<a href="https://doi.org/10.1017/S0007123421000648" ><span class="badge"
 style="float: right;">Paper</span></a></p>
 <p>with Lotte Hargrave</p>
-<p><em>British Journal of Political Science, 2021</em></p>
+<p><em>British Journal of Political Science, 2022</em></p>
 <div id="foo_gender_style" class="jumbotron" visibility="none">
 <p>Research on political style suggests that where women make arguments
 that are more emotional, empathetic, and positive, men use language that
@@ -387,10 +377,10 @@ descriptors of empirical reality now than they were in the past.</p>
 <p><strong>The Variable Persuasiveness of Political Rhetoric</strong>
 <a href="#" onclick="toggleDiv('foo_persuasion');"><span class="badge"
 style="float: right;">Abstract</span></a>
-<a href="./papers/persuasion.pdf" ><span class="badge"
+<a href=".https://doi.org/10.1111/ajps.12703" ><span class="badge"
 style="float: right;">Paper</span></a></p>
 <p>with Benjamin E Lauderdale</p>
-<p><em>American Journal of Political Science, 2021</em></p>
+<p><em>American Journal of Political Science, 2022</em></p>
 <div id="foo_persuasion" class="jumbotron" visibility="none">
 Which types of political rhetoric are most persuasive? Politicians make
 arguments that share common rhetorical elements, including metaphor, ad
@@ -600,44 +590,6 @@ support for parties that primarily mobilize on a single issue.
 <div id="under-review" class="section level2">
 <h2>Under Review</h2>
 <div class="greybox">
-<p><strong>Testing Negative: The Non-Consequences of COVID-19 on Mass
-Ideology</strong>
-<a href="#" onclick="toggleDiv('foo_covid_ideology');"><span
-class="badge" style="float: right;">Abstract</span></a>
-<a href="./papers/covid_ideology.pdf" ><span class="badge"
-style="float: right;">Paper</span></a></p>
-<p>with Timothy Hicks, Alan M. Jacobs, J. Scott Matthews, and Tom
-O’Grady</p>
-<p><em>2023</em></p>
-<div id="foo_covid_ideology" class="jumbotron" visibility="none">
-<p>In response to the COVID-19 pandemic governments implemented
-large-scale economic and social policies that, outside of war time, are
-unprecedented in scale and scope. They highlighted the state’s capacity
-to guarantee economic and health security, and they reached beyond
-demographic groups that are more typically beneficiaries of state
-support. Because of this, we hypothesise that exposure to the pandemic
-and these policy responses caused ideological change, including
-attitudes to the role of government in the economy, redistribution, and
-the deservingness of beneficiaries of state support. We test this
-expectation using data from the long-running (2014–present) British
-Election Study Internet Panel, together with a unique panel survey
-fielded to existing BES respondents in April and September, 2020. Our
-panel makes it possible to track individuals on a rich set of variables
-both before and during the pandemic. We find virtually no evidence that
-the pandemic, or exposure to pandemic-induced shocks, affected
-ideological beliefs about the role of government, or economic and social
-policy attitudes. In a follow-up survey experiment on British
-respondents we test one possible reason for this lack of change –- a
-lack of elite cues -– but find that exposure to elite cues linking the
-pandemic to a greater government role in providing welfare, national
-insurance and public spending has no impact on ideological beliefs
-either. We conclude that the pandemic was not, and could not have been,
-a cause of mass ideological change.</p>
-</div>
-</div>
-<p>
-</p>
-<div class="greybox">
 <p><strong>Liberals and Conservatives Rely on Very Similar Sets of
 Foundations When Comparing Moral Violations</strong>
 <a href="#" onclick="toggleDiv('foo_chickens');"><span class="badge"
@@ -645,7 +597,8 @@ style="float: right;">Abstract</span></a>
 <a href="./papers/chickens_2.pdf" ><span class="badge"
 style="float: right;">Paper</span></a></p>
 <p>with Benjamin E Lauderdale</p>
-<p><em>2023</em></p>
+<p><em>Revise and Resubmit, American Political Science Review,
+2023</em></p>
 <div id="foo_chickens" class="jumbotron" visibility="none">
 <p>Moral Foundations Theory (MFT) aims to explain the origins of and
 variation in human moral reasoning. Applications in political science
@@ -674,7 +627,8 @@ share broadly similar moral intuitions.</p>
 style="float: right;">Abstract</span></a>
 <a href="./papers/reason_giving.pdf" ><span class="badge"
 style="float: right;">Paper</span></a></p>
-<p><em>2023</em></p>
+<p><em>Revise and Resubmit, British Journal of Political Science,
+2023</em></p>
 <div id="foo_reasons" class="jumbotron" visibility="none">
 <p>What are the effects of reason-giving on political attitudes? Both
 political philosophers and political scientists have speculated that
@@ -702,7 +656,8 @@ style="float: right;">Abstract</span></a>
 <a href="./papers/sharks.pdf" ><span class="badge"
 style="float: right;">Paper</span></a></p>
 <p>with Benjamin E Lauderdale</p>
-<p><em>2023</em></p>
+<p><em>Revise and Resubmit, American Journal of Political Science,
+2023</em></p>
 <div id="foo_sharks" class="jumbotron" visibility="none">
 <p>What drives ideological division about political problems? When
 prioritising which problems are most in need of redress, voters might
@@ -719,6 +674,44 @@ problem badness, and only in the US. An important implication of these
 results is that polarization over problem-prioritization is more likely
 to be an emergent property of US politics than of the psychology of US
 citizens.</p>
+</div>
+</div>
+<p>
+</p>
+<div class="greybox">
+<p><strong>Testing Negative: The Non-Consequences of COVID-19 on Mass
+Ideology</strong>
+<a href="#" onclick="toggleDiv('foo_covid_ideology');"><span
+class="badge" style="float: right;">Abstract</span></a>
+<a href="./papers/covid_ideology.pdf" ><span class="badge"
+style="float: right;">Paper</span></a></p>
+<p>with Timothy Hicks, Alan M. Jacobs, J. Scott Matthews, and Tom
+O’Grady</p>
+<p><em>Revise and Resubmit, Journal of Politics, 2023</em></p>
+<div id="foo_covid_ideology" class="jumbotron" visibility="none">
+<p>In response to the COVID-19 pandemic governments implemented
+large-scale economic and social policies that, outside of war time, are
+unprecedented in scale and scope. They highlighted the state’s capacity
+to guarantee economic and health security, and they reached beyond
+demographic groups that are more typically beneficiaries of state
+support. Because of this, we hypothesise that exposure to the pandemic
+and these policy responses caused ideological change, including
+attitudes to the role of government in the economy, redistribution, and
+the deservingness of beneficiaries of state support. We test this
+expectation using data from the long-running (2014–present) British
+Election Study Internet Panel, together with a unique panel survey
+fielded to existing BES respondents in April and September, 2020. Our
+panel makes it possible to track individuals on a rich set of variables
+both before and during the pandemic. We find virtually no evidence that
+the pandemic, or exposure to pandemic-induced shocks, affected
+ideological beliefs about the role of government, or economic and social
+policy attitudes. In a follow-up survey experiment on British
+respondents we test one possible reason for this lack of change –- a
+lack of elite cues -– but find that exposure to elite cues linking the
+pandemic to a greater government role in providing welfare, national
+insurance and public spending has no impact on ideological beliefs
+either. We conclude that the pandemic was not, and could not have been,
+a cause of mass ideological change.</p>
 </div>
 </div>
 <p>
