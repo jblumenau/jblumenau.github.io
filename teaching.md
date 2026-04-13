@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-standfirst: Courses in quantitative methods, text analysis, and political representation
+standfirst: 
 nav: teaching
 permalink: /teaching/
 ---
