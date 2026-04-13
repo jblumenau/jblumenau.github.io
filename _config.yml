@@ -1,0 +1,21 @@
+title: Jack Blumenau
+description: Associate Professor of Political Science, UCL. Senior Evaluation Advisor, Evaluation Task Force, UK Cabinet Office.
+url: "https://www.jackblumenau.com"
+baseurl: ""
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - vendor
+
+# Site settings
+email: j.blumenau@ucl.ac.uk
+address: "Department of Political Science, UCL, Gower Street, London WC1E 6BT"

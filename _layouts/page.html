@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<main class="container">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.standfirst %}<p class="page-standfirst">{{ page.standfirst }}</p>{% endif %}
+  </div>
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+</main>

@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<main class="container">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.standfirst %}<p class="page-standfirst">{{ page.standfirst }}</p>{% endif %}
+  </div>
+
+  <div class="page-content">
+
+    <div class="section-label">Publications</div>
+
+    {% for pub in site.data.publications %}
+    <div class="pub">
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-meta">
+        {% if pub.authors %}with {{ pub.authors }} &middot; {% endif %}
+        {% if pub.status == "forthcoming" %}Forthcoming, {% endif %}
+        <em>{{ pub.journal }}</em>, {{ pub.year }}
+        {% if pub.note %} ({{ pub.note }}){% endif %}
+      </div>
+      <div class="pub-links">
+        {% if pub.pdf %}<a href="{{ pub.pdf }}">Paper</a>{% endif %}
+        {% if pub.doi %}<a href="{{ pub.doi }}">Paper</a>{% endif %}
+        {% if pub.abstract %}<a href="#" class="toggle-abstract">Abstract</a>{% endif %}
+      </div>
+      {% if pub.abstract %}
+      <div class="pub-abstract">{{ pub.abstract }}</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    {{ content }}
+
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.toggle-abstract').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var abstract = this.closest('.pub').querySelector('.pub-abstract');
+      if (abstract) {
+        abstract.classList.toggle('open');
+        this.textContent = abstract.classList.contains('open') ? 'Hide abstract' : 'Abstract';
+      }
+    });
+  });
+</script>

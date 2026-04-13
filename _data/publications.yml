@@ -1,0 +1,266 @@
+# ============================================================
+# Publications – add new papers at the top of this list.
+#
+# Fields:
+#   title:     (required) Paper title
+#   authors:   (optional) Co-authors — omit if sole author
+#   journal:   (required) Journal name
+#   year:      (required) Publication year
+#   status:    (optional) "forthcoming" to show "Forthcoming, ..."
+#   note:      (optional) e.g. "perspective" — shown in parentheses
+#   pdf:       (optional) Local PDF path, e.g. papers/filename.pdf
+#   doi:       (optional) External DOI or URL — use pdf OR doi, not both
+#   abstract:  (optional) Abstract text — paper gets "Abstract" toggle if present
+# ============================================================
+
+- title: "Why Evaluating the Impact of AI Needs to Start Now"
+  authors: "Oliver House, Miriam Light & Elizabeth Shelmerdine"
+  journal: "Nature"
+  year: 2024
+  note: "perspective"
+  doi: "https://www.nature.com/articles/d41586-025-02266-7"
+
+- title: "Does Reason-Giving Affect Political Attitudes?"
+  journal: "British Journal of Political Science"
+  year: 2024
+  status: forthcoming
+  pdf: "papers/reason_giving.pdf"
+  abstract: >
+    What are the effects of reason-giving on political attitudes? Both political
+    philosophers and political scientists have speculated that defending proposals
+    with reasons may change voters' preferences. However, while models of attitude
+    formation predict that the explicit justification of one's political views may
+    result in attitudes that are more ideologically consistent, less polarized, and
+    more stable, empirical work has not assessed the connection between
+    reason-giving and attitudes. Implementing a survey experiment in which some
+    respondents provide reasons before stating their opinions on six issues in UK
+    politics, I find that reason-giving has very limited effects on the constraint,
+    stability, or polarization of the public's political attitudes.
+
+- title: "Citizens' Preferences for Multidimensional Representation"
+  authors: "Chris Wratil & Fabio Wolkenstein"
+  journal: "Perspectives on Politics"
+  year: 2024
+  status: forthcoming
+  pdf: "papers/multi_rep.pdf"
+  abstract: >
+    How do citizens want to be represented in politics? We investigate citizens'
+    multidimensional preferences regarding six conceptions of representation that
+    figure prominently in political theory but of which some have been overlooked
+    in empirical work. Using original item batteries and a conjoint experiment, we
+    elicit the relative importance of the dimensions and the types of
+    representation people prefer on each. Our results from surveys fielded in the
+    USA, the UK, and Germany show that descriptive representation has limited
+    appeal for citizens at large but is important for historically marginalized
+    groups; citizens do not focus on local politicians when thinking about who
+    represents them; and while citizens strongly value substantive representation,
+    they are largely indifferent as to whether their representatives are responsive
+    to electoral sanctions.
+
+- title: "Polarization over the Priority of Political Problems"
+  authors: "Benjamin E. Lauderdale"
+  journal: "American Journal of Political Science"
+  year: 2024
+  status: forthcoming
+  pdf: "papers/sharks.pdf"
+  abstract: >
+    What drives ideological division about political problems? When prioritising
+    which problems are most in need of redress, voters might disagree about the
+    severity of individual outcomes, the prevalence of those problems, or whether
+    such problems are amenable to solution by government action. We field a large
+    survey experiment in the UK and US and develop a new measurement approach which
+    allows us to evaluate how ideological disagreements change when respondents
+    consider the individual badness, social severity, and priority for government
+    action of a set of 41 political problems. We find that large ideological
+    divergences are observed in beliefs about social severity and priority for
+    government action, not individual problem badness, and only in the US.
+
+- title: "Liberals and Conservatives Rely on Very Similar Sets of Foundations When Comparing Moral Violations"
+  authors: "Benjamin E. Lauderdale"
+  journal: "American Political Science Review"
+  year: 2024
+  doi: "https://doi.org/10.1017/S0003055424000492"
+  abstract: >
+    Moral Foundations Theory aims to explain the origins of and variation in human
+    moral reasoning. Applications in political science have revealed differences in
+    the degree to which liberals and conservatives explicitly endorse five core
+    moral foundations. However, differences in self-reported assessments do not
+    imply that citizens with different political orientations respond to concrete
+    scenarios based on different moral intuitions. We introduce a new approach for
+    measuring the implicit importance of the five moral foundations by asking
+    respondents from the UK and the US to compare pairs of vignettes describing
+    violations relevant to each foundation. Our results suggest that, despite
+    prominent claims to the contrary, voters on the left and the right of politics
+    share broadly similar moral intuitions.
+
+- title: "Testing Negative: The Non-Consequences of COVID-19 on Mass Ideology"
+  authors: "Timothy Hicks, Alan M. Jacobs, J. Scott Matthews & Tom O'Grady"
+  journal: "Journal of Politics"
+  year: 2024
+  status: forthcoming
+  pdf: "papers/covid_ideology.pdf"
+  abstract: >
+    In response to the COVID-19 pandemic governments implemented large-scale
+    economic and social policies unprecedented in scale and scope outside of
+    wartime. We hypothesise that exposure to the pandemic and these policy
+    responses caused ideological change, including attitudes to the role of
+    government in the economy and redistribution. Using data from the British
+    Election Study Internet Panel and a unique panel survey, we find virtually no
+    evidence that the pandemic affected ideological beliefs about the role of
+    government or economic and social policy attitudes. We conclude that the
+    pandemic was not, and could not have been, a cause of mass ideological change.
+
+- title: "Using Automated Text Classification to Explore Uncertainty in NICE Appraisals for Drugs for Rare Diseases"
+  authors: "Lea Weidmann, John Cairns & Orlagh Carroll"
+  journal: "International Journal of Technology Assessment in Health Care"
+  year: 2023
+  doi: "https://doi.org/10.1017/s0266462323002805"
+  abstract: >
+    This study examined the application of supervised learning models for text
+    classification in NICE appraisals for rare disease treatments in relation to
+    uncertainty. We analysed 94 appraisals published between 2011 and 2023, using
+    Naive Bayes, Lasso, and SVM models to classify paragraphs as either
+    referencing uncertainty in the evidence base or not. The best-performing model
+    achieved 83.6% classification accuracy. Paragraphs classified as referencing
+    uncertainty were significantly more likely to arise in HST appraisals compared
+    to TA appraisals.
+
+- title: "Risk and Health Policy Preferences: Evidence from the UK COVID-19 Crisis"
+  authors: "Raluca Pahontu & Timothy Hicks"
+  journal: "British Journal of Political Science"
+  year: 2023
+  doi: "https://doi.org/10.1017/S0007123422000539"
+  abstract: >
+    We investigate whether individuals subject to larger increases in objective
+    health risk during COVID-19 became more supportive of increased government
+    healthcare spending. Using panel data tracking UK individuals before and after
+    the outbreak, we implement a pre-registered fixed-effect design. While
+    individuals in high-risk occupations were more worried about personal infection
+    risk and had higher death rates, there is no evidence that increased health
+    risks shifted attitudes on government spending on healthcare or broader
+    redistribution.
+
+- title: "No Longer Conforming to Stereotypes? Gender, Political Style, and Parliamentary Debate in the UK"
+  authors: "Lotte Hargrave"
+  journal: "British Journal of Political Science"
+  year: 2022
+  doi: "https://doi.org/10.1017/S0007123421000648"
+  abstract: >
+    Research on political style suggests that women make arguments that are more
+    emotional, empathetic, and positive, while men use language that is more
+    analytical, aggressive, and complex. We argue that pressures for female
+    politicians to conform to stereotypically 'feminine' styles have diminished in
+    recent years. Analysing UK parliamentary debates between 1997 and 2019, we
+    show that female MPs' debating styles have changed substantially over time, as
+    women in parliament have increasingly adopted stylistic traits typically
+    associated with 'masculine' stereotypes of communication.
+
+- title: "The Variable Persuasiveness of Political Rhetoric"
+  authors: "Benjamin E. Lauderdale"
+  journal: "American Journal of Political Science"
+  year: 2022
+  doi: "https://doi.org/10.1111/ajps.12703"
+  abstract: >
+    Which types of political rhetoric are most persuasive? Politicians make
+    arguments that share common rhetorical elements, including metaphor, ad hominem
+    attacks, appeals to expertise, moral appeals, and many others. We report on a
+    novel experimental design assessing the relative persuasiveness of a large
+    number of arguments across a range of UK political issues. We find modest
+    differences in the average effectiveness of rhetorical elements, but also large
+    variation in the persuasiveness of arguments of the same rhetorical type across
+    issues.
+
+- title: "Measuring Attitudes towards Public Spending Using a Multivariate Tax Summary Experiment"
+  authors: "Lucy Barnes & Benjamin E. Lauderdale"
+  journal: "American Journal of Political Science"
+  year: 2021
+  doi: "https://doi.org/10.1111/ajps.12643"
+  abstract: >
+    We present a new measurement strategy using UK taxpayer summaries as the
+    baseline for a continuous treatment, multivariate choice experiment. The
+    experiment proposes deficit-neutral bundles of changes in spending and
+    taxation, allowing us to investigate attitudes towards modifications to the
+    existing budget. We find that the UK public favours paying more in tax to
+    finance large spending increases across major budget categories; that spending
+    preferences are multidimensional; and that younger people prefer lower levels
+    of taxation and spending than older people.
+
+- title: "Online Activism and Dyadic Representation: Evidence from the UK E-Petition System"
+  journal: "Legislative Studies Quarterly"
+  year: 2020
+  doi: "https://doi.org/10.1111/lsq.12291"
+  abstract: >
+    Using new data from an e-petition system in the UK, I show that support for a
+    petition amongst a Member of Parliament's constituents substantially increases
+    the probability that the MP advocates for the petition in parliamentary debate.
+    However, MP responsiveness is conditioned both by party discipline and
+    electoral competition. These findings have important implications for our
+    understanding of dyadic representation in parliamentary systems.
+
+- title: "Parliamentary Debate in the UK House of Commons"
+  authors: "Roberta Damiani"
+  journal: "The Politics of Legislative Debate"
+  year: 2020
+  note: "book chapter"
+  abstract: >
+    We describe the institutional setting of parliamentary debate in the UK House
+    of Commons and assess the determinants of participation using data on more than
+    two million speeches from 1979 to 2019. We show that the main determinant of
+    participation is whether an MP holds an institutionally powerful position. The
+    speech-making bonus enjoyed by those in leadership positions has decreased over
+    time, while MPs have increasingly employed constituency-oriented language in
+    their parliamentary speeches over the past 40 years.
+
+- title: "Model-Based Pre-Election Polling for National and Sub-National Outcomes in the US and UK"
+  authors: "Benjamin E. Lauderdale, Delia Bailey & Douglas Rivers"
+  journal: "International Journal of Forecasting"
+  year: 2020
+  doi: "https://doi.org/10.1016/j.ijforecast.2019.05.012"
+  abstract: >
+    We describe a strategy for applying multilevel regression and
+    post-stratification (MRP) methods to pre-election polling. Using
+    contemporaneous polling, census data, and past election results, we construct
+    probabilistic, internally consistent estimates of national vote and
+    sub-national outcomes. We report on three applications: the 2016 UK EU
+    Referendum, the 2016 US Presidential Election, and the 2017 UK General
+    Election.
+
+- title: "The Effects of Female Leadership on Women's Voice in Political Debate"
+  journal: "British Journal of Political Science"
+  year: 2019
+  doi: "https://doi.org/10.1017/S0007123419000334"
+  abstract: >
+    Do female leaders amplify the voices of other women in politics? Examining
+    parliamentary debates in the UK House of Commons, I demonstrate that female
+    ministers substantially increase the participation and influence of other female
+    MPs in relevant debates. Using a new metric of ministerial responsiveness, I
+    show that female ministers are significantly more responsive to the speeches of
+    female backbenchers than are male ministers.
+
+- title: "Never Let a Good Crisis Go to Waste: Agenda Setting and Legislative Voting in Response to the EU Crisis"
+  authors: "Benjamin E. Lauderdale"
+  journal: "Journal of Politics"
+  year: 2017
+  doi: "http://www.journals.uchicago.edu/doi/pdfplus/10.1086/694543"
+  abstract: >
+    When exogenous shocks make status quo policies less attractive, legislators
+    become more tolerant to proposed alternatives further from their ideal. This
+    increases the discretion of agenda-setters, allowing them to pass policy that
+    would have been impossible without a crisis. We argue this dynamic explains
+    changes in European Parliament voting during the financial crisis, with
+    pro-integration actors shifting policy further towards integration than they
+    could have otherwise.
+
+- title: "Open/Closed List and Party Choice: Experimental Evidence from the UK"
+  authors: "Andrew C. Eggers, Dominik Hangartner & Simon Hix"
+  journal: "British Journal of Political Science"
+  year: 2016
+  doi: "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/openclosed-list-and-party-choice-experimental-evidence-from-the-uk/3591892A046B62667F43B3B531762D9C"
+  abstract: >
+    Which parties benefit from open-list proportional representation? We show that
+    a move from closed-list to open-list competition is likely to be more
+    favourable to parties with more internal disagreement on salient issues.
+    Experimental evidence from a hypothetical European Parliament election in the
+    UK demonstrates that using an open-list ballot would shift support from UKIP to
+    Eurosceptic candidates of the Conservative Party, suggesting that open-list
+    ballots could restrict support for single-issue parties.

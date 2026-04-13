@@ -1,0 +1,60 @@
+---
+layout: page
+title: Projects
+standfirst: Research projects, government advisory work, and policy engagement
+nav: projects
+permalink: /projects/
+---
+
+<div class="section-label">Policy & Government</div>
+
+<div class="project" id="argie">
+  <div class="project-tags">
+    <span class="project-tag tag-research">Research</span>
+    <span class="project-tag tag-government">Government</span>
+  </div>
+  <h3>ARGIE — Analysing the Reliability of Government Impact Evaluations</h3>
+  <div class="project-meta">
+    With <a href="https://www.durham.ac.uk/staff/anouk-s-rigterink/">Anouk S. Rigterink</a> (Durham) · Funded by <a href="https://www.ukri.org/publications/esrc-metascience-research-grant-awards/">UKRI Metascience Research Grant</a><br>
+    UCL · Durham University · Evaluation Task Force, Cabinet Office
+  </div>
+
+  <p>Government departments across the UK spend hundreds of millions of pounds each year on impact evaluations — quantitative studies that measure the effects of policy interventions. These evaluations are highly integrated into the policymaking process, with many billions of pounds of public spending resting on their results.</p>
+
+  <p>Recent metascience research has shown that quantitative findings in many academic disciplines are sensitive to the analysis decisions researchers make: which data to use, how to measure outcomes, which model to estimate, and so on. Different research teams analysing the same data frequently produce different results. If the same problem affects government evaluations, policymakers cannot be confident that the conclusions of any single evaluation are robust.</p>
+
+  <p>ARGIE addresses this through three complementary approaches. First, a <strong>many-teams analysis</strong> in which independent research teams reanalyse data from existing government impact evaluations. Second, a <strong>survey-based analysis</strong> soliciting defensible analysis choices from a broad pool of researchers. Third, a <strong>multiverse analysis</strong> simulating the full universe of possible analysis strategies for a given evaluation.</p>
+
+  <p>The project partners with social researchers in the Cabinet Office and aims to translate findings into practical guidance for evaluators, including contributions to the <em>Magenta Book</em>, the UK government's core resource for evaluation practice.</p>
+
+  <p>If you would like to participate as an analyst in the many-teams component, you can <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=i9hQcmhLKUW-RNWaLYpvlAy_mDRpi1pMtzLYBIq1hTJUQTYzTE02OEY5SloxRFFMV09LUlQ4M044RC4u&origin=QRCode">sign up here</a>.</p>
+</div>
+
+<div class="project" id="evex">
+  <div class="project-tags">
+    <span class="project-tag tag-government">Government</span>
+  </div>
+  <h3>Evidence Exchange (EvEx)</h3>
+  <div class="project-meta">
+    Led by the Centre for Science and Policy, University of Cambridge · Funded by ESRC (£3.75m)<br>
+    Consortium: Cambridge · UCL · King's College London · Edinburgh · Swansea · Queen's Belfast · Manchester
+  </div>
+
+  <p>The Evidence Exchange is a new national network designed to connect civil and public servants with university researchers across the UK. The consortium, led by Cambridge's Centre for Science and Policy, is developing UK-wide infrastructure to enable more universities and research organisations to offer "Policy to Research" opportunities for government professionals.</p>
+
+  <p>Key initiatives include a <strong>Digital Campus</strong> to promote academic-policy exchange schemes and courses, and professional development programmes to equip public and civil servants with the skills needed for effective evidence-informed policymaking. The project aims to build the civil service's internal capacity both to create and consume high-quality research, and to empower policymakers to draw on the UK's world-class research base.</p>
+
+  <p>As part of the UCL team, I contribute to the design of evaluation and evidence-use components of the programme, drawing on my experience at both UCL and the Cabinet Office's Evaluation Task Force.</p>
+</div>
+
+<div class="project" id="cabinet-office">
+  <div class="project-tags">
+    <span class="project-tag tag-government">Government</span>
+  </div>
+  <h3>Evaluation Task Force, UK Cabinet Office</h3>
+  <div class="project-meta">Specialist Evaluation Advisor (2025-) · UKRI Policy Fellow (2023–2025)</div>
+
+  <p>I am a Specialist Evaluation Advisor at the <a href="https://www.gov.uk/government/organisations/evaluation-task-force">Evaluation Task Force</a> in the Cabinet Office. In this role, I advise on the design and implementation of impact evaluations across government departments, contribute to cross-government evaluation standards, and work to strengthen the connection between academic evidence and policy decisions.</p>
+
+  <p>I am also a member of government's <a href="https://www.gov.uk/government/publications/cross-government-trial-advice-panel-role-and-membership">Evaluation and Trial Advice Panel</a>, where I advise on the use of experimental and quasi-experimental methods in policy evaluation.</p>
+</div>
