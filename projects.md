@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Projects
-standfirst: Research projects, government advisory work, and policy engagement
+title: Current Projects
+standfirst: 
 nav: projects
 permalink: /projects/
 ---
 
-<div class="section-label">Policy & Government</div>
+
 
 <div class="project" id="argie">
   <div class="project-tags">

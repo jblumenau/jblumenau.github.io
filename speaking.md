@@ -2,7 +2,7 @@
 layout: page
 title: Speaking & Consultancy
 standfirst: Talks, workshops, and advisory work on evidence, evaluation, and public opinion
-nav: speaking
+nav: Consultancy
 permalink: /speaking/
 ---
 
