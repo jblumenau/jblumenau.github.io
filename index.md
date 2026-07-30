@@ -7,7 +7,7 @@ layout: default
     <div class="hero-grid">
       <div>
         <h1>Jack Blumenau</h1>
-        <p class="subtitle">Associate Professor of Political Science, <a href="https://www.ucl.ac.uk/political-science/">UCL</a>. <br>
+        <p class="subtitle">Professor of Political Science, <a href="https://www.ucl.ac.uk/political-science/">UCL</a>. <br>
         Specialist Evaluation Advisor, <a href="https://www.gov.uk/government/organisations/evaluation-task-force">Evaluation Task Force</a>, UK Cabinet Office.</p>
 
         <div class="bio">
