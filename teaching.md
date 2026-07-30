@@ -24,7 +24,7 @@ permalink: /teaching/
 
 <div class="course-group">
   <div class="course">
-    <div class="course-code"><a href="https://www.ucl.ac.uk/module-catalogue/modules/political-representation-POLS0085">POLS0083 (UCL)</a></div>
+    <div class="course-code"><a href="https://www.ucl.ac.uk/module-catalogue/modules/political-representation-POLS0085">POLS0085 (UCL)</a></div>
     <div class="course-title">Political Representation</div>
   </div>
     <div class="course">
